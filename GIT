@@ -1,0 +1,179 @@
+Version control Sysytem
+Auto resolve
+we need someone to integrate the code 24 hours
+To track who commited the codes
+Reference of commit
+central server --centralized version control system  --- they required internet all time bcz they work in same place
+developer side-Distribused version control system  - they need internet only when they are connecting they take code to their laptop
+
+Git comes under distributed version control system
+each time when we saved the code the git stores a seperate version.
+
+it thas three phases:
+working area: create ,modify,edit,delete means it can track
+Staging area : we have to index the files.so we have to add files from working area to staging area,
+command name is git add filename
+to save into git datatbase: command is git commit
+
+
+When  why who what
+when it will take time by defaukt
+what code has modified by tracking
+who means author for one time --->git config user.name 
+GITHUB BITBUCKET git add .
+git add -all
+git status
+git init
+git commit -m "sagar updated"
+git config user.name "sagar"
+git config user.email "sagar.hem92@gmail.com"
+git log -p --> Patch
+git log --stat ---> statistics
+Anees Ravid Khan.
+
+
+create new repository | unique name | public | create repository
+
+git status
+
+git remote -v | check the connection between local and remote repository.
+
+git remote add origin URL (github) | git remote -v |orgin--base-remote|
+
+git checkout --> git switch
+
+git push origin main  >>>  any username ||| token for password
+
+git clone url
+
+capital comes first with alphabetical
+
+
+git log --n5
+
+git log %an --oneline %H we can check more parametres in git log --help
+
+
+Placeholders that expand to information extracted from the commit:
+
+               %H
+                   commit hash
+
+               %h
+                   abbreviated commit hash
+
+               %T
+                   tree hash
+
+               %t
+                   abbreviated tree hash
+
+               %P
+                   parent hashes
+
+               %p
+                   abbreviated parent hashes
+
+               %an
+                   author name
+
+               %aN
+                   author name (respecting .mailmap, see git-shortlog(1) or git-blame(1))
+
+               %ae
+                   author email
+
+               %aE
+                   author email (respecting .mailmap, see git-shortlog(1) or git-blame(1))
+
+               %al
+                   author email local-part (the part before the @ sign)
+
+               %aL
+                   author local-part (see %al) respecting .mailmap, see git-shortlog(1) or
+                   git-blame(1))
+
+               %ad
+                   author date (format respects --date= option)
+
+               %aD
+                   author date, RFC2822 style
+
+               %ar
+                   author date, relative
+
+               %at
+                   author date, UNIX timestamp
+
+               %ai
+                   author date, ISO 8601-like format
+
+               %aI
+                   author date, strict ISO 8601 format
+
+               %as
+                   author date, short format (YYYY-MM-DD)
+
+               %ah
+                   author date, human style (like the --date=human option of git-rev-list(1))
+
+               %cn
+                   committer name
+
+               %cN
+                   committer name (respecting .mailmap, see git-shortlog(1) or git-blame(1))
+
+               %ce
+                   committer email
+
+               %cE
+                   committer email (respecting .mailmap, see git-shortlog(1) or git-blame(1))
+
+               %cl
+                   committer email local-part (the part before the @ sign)
+
+               %cL
+                   committer local-part (see %cl) respecting .mailmap, see git-shortlog(1) or
+                   git-blame(1))
+
+               %cd
+                   committer date (format respects --date= option)
+
+
+               %cr
+                   committer date, relative
+
+               %ct
+                   committer date, UNIX timestamp
+
+               %ci
+                   committer date, ISO 8601-like format
+
+               %cI
+                   committer date, strict ISO 8601 format
+
+               %cs
+                   committer date, short format (YYYY-MM-DD)
+
+               %ch
+                   committer date, human style (like the --date=human option of git-rev-
+                   list(1))
+
+               %d
+                   ref names, like the --decorate option of git-log(1)
+
+               %D
+                   ref names without the " (", ")" wrapping.
+
+               %(describe[:options])
+                   human-readable name, like git-describe(1); empty string for undescribable
+                   commits. The describe string may be followed by a colon and zero or more
+                   comma-separated options. Descriptions can be inconsistent when tags are
+                   added or removed at the same time.
+
+                   •   match=<pattern>: Only consider tags matching the given glob(7) pattern,
+                       excluding the "refs/tags/" prefix.
+
+                   •   exclude=<pattern>: Do not consider tags matching the given glob(7)
+                       pattern, excluding the "refs/tags/" prefix.
+
