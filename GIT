@@ -59,7 +59,16 @@ git status -s -sb
 
 git restore --staged file.name 
 
+git show commit id
+
 git reset  -->  mixed | soft | hard 
+
+git revert 
+
+git reflog -6
+
+git branch 
+
 Placeholders that expand to information extracted from the commit:
 
                %H
