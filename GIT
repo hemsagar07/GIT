@@ -53,7 +53,13 @@ git log --n5
 
 git log %an --oneline %H we can check more parametres in git log --help
 
+git restore gile.name
 
+git status -s -sb
+
+git restore --staged file.name 
+
+git reset  -->  mixed | soft | hard 
 Placeholders that expand to information extracted from the commit:
 
                %H
