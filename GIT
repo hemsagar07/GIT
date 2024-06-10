@@ -192,3 +192,7 @@ Placeholders that expand to information extracted from the commit:
                    •   exclude=<pattern>: Do not consider tags matching the given glob(7)
                        pattern, excluding the "refs/tags/" prefix.
 
+For merging git branches we have 3 methods
+merge 
+rebase
+cherry-pick
